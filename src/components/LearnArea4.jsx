@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import { useState } from "react";
 import '../assets/scss/LearnArea4.scss';
 
@@ -55,9 +56,9 @@ export default function LearnArea4() {
     });
   };
 
-  const handleEmotionClick = () => {
-    window.location.href = "/LearnPage"; // 跳轉到指定的頁面
-  };
+  // const handleEmotionClick = () => {
+  //   window.location.href = "/LearnPage"; // 跳轉到指定的頁面
+  // };
 
   return (
     <section id="LearnAreaall4">
@@ -118,13 +119,16 @@ export default function LearnArea4() {
                   { id: 3, name: "Surprised", image: "images/icon_pink.svg" },
                   { id: 4, name: "Confused", image: "images/icon_blue.svg" }
                 ].map((emotion) => (
-                  <button
-                    key={emotion.id}
-                    className="emotion-button"
-                    onClick={handleEmotionClick}
-                  >
+                  // <button
+                  //   key={emotion.id}
+                  //   className="emotion-button"
+                  //   onClick={handleEmotionClick}
+                  // >
+                  <Link to="/LearnPage" key={emotion.id} className="emotion-button">
+
                     <img src={emotion.image} alt={emotion.name} className="emoji-img" />
-                  </button>
+                  </Link>
+                  // </button>
                 ))}
               </div>
             </div>
@@ -132,8 +136,8 @@ export default function LearnArea4() {
         )}
       </div>
       <div className="road">
-       <img className="road1" src="images/greenA.svg" alt="" />
-       <img className="road2" src="images/learnAreaPath.png" alt="" />
+        <img className="road1" src="images/greenA.svg" alt="" />
+        <img className="road2" src="images/learnAreaPath.png" alt="" />
       </div>
     </section>
   );

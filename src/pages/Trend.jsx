@@ -3,9 +3,13 @@ import TrendCard2 from "../components/TrendCard2";
 import "../assets/scss/Trend.scss"
 import Navbar from '../components/Navbar'
 import { useEffect } from "react";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 export default function Trend() {
+  //每次點到時，都是從頂部開始
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
     return (
     <>
       <section id="div1" >

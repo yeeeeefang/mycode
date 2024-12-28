@@ -6,7 +6,7 @@ import LearnArea3 from '../components/LearnArea3';
 import LearnArea4 from '../components/LearnArea4';
 import NavbarBack from '../components/NavbarBack';
 import LearnAreaCollect from '../components/LearnAreaCollect';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 
 function LearnArea() {
