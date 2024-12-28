@@ -1,4 +1,4 @@
-import '../assets/scss/LearnArea3.scss'
+import '../assets/css/LearnArea3.css'
 
 function LearnArea3() {
     return (

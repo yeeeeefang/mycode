@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/scss/LearnAreaCollect.scss';
+import '../assets/css/LearnAreaCollect.css';
 
 const LearnAreaCollect = () => {
     const [showCollectYes, setShowCollectYes] = useState(false);

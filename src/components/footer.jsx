@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../src/assets/scss/Footer.scss';
+import '../../src/assets/css/Footer.css';
 
 
 function Footer() {

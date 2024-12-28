@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../../src/assets/scss/TrendCard.scss'
+import '../../src/assets/css/TrendCard.css'
 function TrendCard() {
  
     const turnLearnArea = useNavigate();

@@ -1,4 +1,4 @@
-import "../assets/scss/register.scss"
+import "../assets/css/register.css"
 import Navbar from "../components/Navbar"
 
 

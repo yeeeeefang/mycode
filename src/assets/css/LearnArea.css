@@ -164,4 +164,13 @@ a {
 ::-webkit-resizer{//多行文字欄位右下縮放按鈕
     background-color: $lesser-1;
 } */
-/* reset end *//*# sourceMappingURL=LearnArea.css.map */
+/* reset end */
+#learnArea-a {
+  background-color: #FFD640;
+}
+#learnArea-a #la1 {
+  background-image: url("../images/LearnArea-bg.svg");
+  background-position: center bottom -250px;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+}/*# sourceMappingURL=LearnArea.css.map */

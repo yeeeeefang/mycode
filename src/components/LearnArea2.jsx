@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../assets/scss/LearnArea2.scss'
+import '../assets/css/LearnArea2.css'
 import $ from 'jquery';
 
 function LearnArea2() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
-import '../assets/scss/LearnArea4.scss';
+import '../assets/css/LearnArea4.css';
 
 export default function LearnArea4() {
   const [draggableItems, setDraggableItems] = useState([

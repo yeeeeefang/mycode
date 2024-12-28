@@ -1,6 +1,6 @@
 import TrendCard from "../components/TrendCard";
 import TrendCard2 from "../components/TrendCard2";
-import "../assets/scss/Trend.scss"
+import "../assets/css/Trend.css"
 import Navbar from '../components/Navbar'
 import { useEffect } from "react";
 import Footer from "../components/Footer";

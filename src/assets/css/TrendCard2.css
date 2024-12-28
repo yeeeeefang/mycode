@@ -186,7 +186,7 @@ a {
 }
 .tdcard .tdtd1 .ttitle1 .trendtitle1,
 .tdcard .tdtd2 .ttitle1 .trendtitle1 {
-  background-image: url("../../../public/images/trendDeco1.png");
+  background-image: url("../images/trendDeco1.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@ a {
 }
 .tdcard .tdtd1 .ttitle2 .trendtitle2,
 .tdcard .tdtd2 .ttitle2 .trendtitle2 {
-  background-image: url("../../../public/images/trendDeco2.png");
+  background-image: url("../images/trendDeco2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -285,6 +285,45 @@ a {
   text-align: center;
   padding: 10px 0;
   margin-bottom: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* 卡片暫停動畫 */
+}
+.tdcard .tdtd1 .tdcard-1 .card1-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card2-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card3-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card4-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card5-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card6-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card7-1:hover,
+.tdcard .tdtd1 .tdcard-1 .card8-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card1-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card2-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card3-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card4-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card5-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card6-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card7-1:hover,
+.tdcard .tdtd1 .tdcard-2 .card8-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card1-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card2-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card3-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card4-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card5-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card6-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card7-1:hover,
+.tdcard .tdtd2 .tdcard-1 .card8-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card1-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card2-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card3-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card4-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card5-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card6-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card7-1:hover,
+.tdcard .tdtd2 .tdcard-2 .card8-1:hover {
+  animation-play-state: paused;
+  rotate: 0deg;
+  scale: 1.05;
 }
 .tdcard .tdtd1 .tdcard-1 .card1-1 .learn-1,
 .tdcard .tdtd1 .tdcard-1 .card2-1 .learn-1,
@@ -402,29 +441,61 @@ a {
 }
 @keyframes float {
   0%, 100% {
-    transform: translate(0); /* 初始位置 */
+    transform: translate(0);
+    /* 初始位置 */
   }
   50% {
-    transform: translate(10px, -10px); /* 向上浮动的高度 */
+    transform: translate(10px, -10px);
+    /* 向上浮动的高度 */
   }
 }
-.tdcard .tdtd1 .card1-1, .tdcard .tdtd1 .card3-1,
-.tdcard .tdtd2 .card1-1,
-.tdcard .tdtd2 .card3-1 {
-  animation: float 2s infinite ease-in-out; /* 2秒循环 */
+.tdcard .tdtd1 .tdcard-1 .card1-1,
+.tdcard .tdtd1 .tdcard-1 .card3-1,
+.tdcard .tdtd1 .tdcard-1 .card5-1,
+.tdcard .tdtd1 .tdcard-1 .card7-1,
+.tdcard .tdtd1 .tdcard-2 .card1-1,
+.tdcard .tdtd1 .tdcard-2 .card3-1,
+.tdcard .tdtd1 .tdcard-2 .card5-1,
+.tdcard .tdtd1 .tdcard-2 .card7-1,
+.tdcard .tdtd2 .tdcard-1 .card1-1,
+.tdcard .tdtd2 .tdcard-1 .card3-1,
+.tdcard .tdtd2 .tdcard-1 .card5-1,
+.tdcard .tdtd2 .tdcard-1 .card7-1,
+.tdcard .tdtd2 .tdcard-2 .card1-1,
+.tdcard .tdtd2 .tdcard-2 .card3-1,
+.tdcard .tdtd2 .tdcard-2 .card5-1,
+.tdcard .tdtd2 .tdcard-2 .card7-1 {
+  animation: float 2s infinite ease-in-out;
+  /* 2秒循环 */
+  rotate: -5deg;
 }
 @keyframes float1 {
   0%, 100% {
-    transform: translate(10px, -10px); /* 初始位置 */
+    transform: translate(10px, -10px);
+    /* 初始位置 */
   }
   50% {
     transform: translate(0);
   }
 }
-.tdcard .tdtd1 .card2-1, .tdcard .tdtd1 .card4-1,
-.tdcard .tdtd2 .card2-1,
-.tdcard .tdtd2 .card4-1 {
+.tdcard .tdtd1 .tdcard-1 .card2-1,
+.tdcard .tdtd1 .tdcard-1 .card4-1,
+.tdcard .tdtd1 .tdcard-1 .card6-1,
+.tdcard .tdtd1 .tdcard-1 .card8-1,
+.tdcard .tdtd1 .tdcard-2 .card2-1,
+.tdcard .tdtd1 .tdcard-2 .card4-1,
+.tdcard .tdtd1 .tdcard-2 .card6-1,
+.tdcard .tdtd1 .tdcard-2 .card8-1,
+.tdcard .tdtd2 .tdcard-1 .card2-1,
+.tdcard .tdtd2 .tdcard-1 .card4-1,
+.tdcard .tdtd2 .tdcard-1 .card6-1,
+.tdcard .tdtd2 .tdcard-1 .card8-1,
+.tdcard .tdtd2 .tdcard-2 .card2-1,
+.tdcard .tdtd2 .tdcard-2 .card4-1,
+.tdcard .tdtd2 .tdcard-2 .card6-1,
+.tdcard .tdtd2 .tdcard-2 .card8-1 {
   animation: float 3s infinite ease-in-out;
+  rotate: 5deg;
 }
 .tdcard .out {
   position: relative;

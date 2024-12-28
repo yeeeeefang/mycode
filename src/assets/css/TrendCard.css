@@ -187,13 +187,15 @@ a {
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;
+  opacity: 0;
+  animation: cardShow 0.5s ease-in-out forwards 3s;
 }
 .cardcontent .card1::before {
   content: "";
   width: 82px;
   height: 88px;
   background-color: transparent;
-  background-image: url("../public/images/trendSecond.png");
+  background-image: url("../images/trendSecond.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -239,13 +241,15 @@ a {
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;
+  opacity: 0;
+  animation: cardShow 0.5s ease-in-out forwards 2.5s;
 }
 .cardcontent .card2::before {
   content: "";
   width: 82px;
   height: 88px;
   background-color: transparent;
-  background-image: url("../public/images/trendFirst.png");
+  background-image: url("../images/trendFirst.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -290,13 +294,15 @@ a {
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;
+  opacity: 0;
+  animation: cardShow 0.5s ease-in-out forwards 3.5s;
 }
 .cardcontent .card3::before {
   content: "";
   width: 82px;
   height: 88px;
   background-color: transparent;
-  background-image: url("../public/images/trendThird.png");
+  background-image: url("../images/trendThird.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -329,4 +335,20 @@ a {
   background-color: #E7E7E7;
   font-size: 14px;
   margin-bottom: 10px;
+}
+.cardcontent .card1, .cardcontent .card2, .cardcontent .card3 {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.cardcontent .card1:hover, .cardcontent .card2:hover, .cardcontent .card3:hover {
+  transform: translate(-3px, -3px);
+}
+
+@keyframes cardShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=TrendCard.css.map */

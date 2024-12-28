@@ -1,4 +1,4 @@
-import '../assets/scss/LearnGame.scss'
+import '../assets/css/LearnGame.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 

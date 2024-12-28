@@ -1,4 +1,4 @@
-import '../assets/scss/LearnArea.scss';
+import '../assets/css/LearnArea.css';
 import { useEffect } from 'react';
 import LearnArea1 from "../components/LearnArea1";
 import LearnArea2 from '../components/LearnArea2';

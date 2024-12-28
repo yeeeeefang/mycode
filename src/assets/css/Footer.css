@@ -175,6 +175,9 @@ a {
   padding: 40px 125px;
   height: 250px;
 }
+.nav1 a:hover {
+  scale: 1.05;
+}
 .nav1 #nav1-1 {
   display: flex;
 }
@@ -186,8 +189,15 @@ a {
   padding-bottom: 25px;
   font-weight: 700;
 }
-.nav1 #nav1-1 .item2 {
+.nav1 #nav1-1 .item1 .item2 {
   padding-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav1 #nav1-1 .lm {
+  display: flex;
+}
+.nav1 #nav1-1 .lm a {
   font-size: 1rem;
   font-weight: 500;
 }
@@ -227,6 +237,65 @@ a {
   text-align: right;
 }
 
+/* 跳窗 */
+.foomodal {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foomodal .foomodal-content {
+  background-color: #FFF0C0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  height: fit-content;
+}
+.foomodal .foomodal-content h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  font-weight: 900;
+  color: #FFD640;
+  letter-spacing: 10px;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.85);
+  text-stroke: 2px rgba(0, 0, 0, 0.85);
+}
+.foomodal .foomodal-content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.foomodal .foomodal-content .foomodal-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 0 auto;
+}
+.foomodal .foomodal-content .foomodal-wrapper .foomodalimg {
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+.foomodal .foomodal-content .foored {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foomodal .foomodal-content .foored h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.foomodal .foomodal-content .foored img {
+  width: 48px;
+  height: 48px;
+}
+
 @keyframes ani-love1 {
   /*動畫名稱為 ani-love1 */
   0%, 100% {
@@ -248,6 +317,10 @@ a {
     transform: translateY(-15px);
     /* 向上浮动的高度 */
   }
+}
+.donimg:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 .donimg:hover .testt {
   animation-name: ani-love1;

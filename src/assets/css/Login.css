@@ -175,42 +175,55 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 #login-page .login-main .amoeba-blobs {
   width: 90%;
-  position: relative;
+  position: absolute;
   left: 152px;
   top: -350px;
   overflow: hidden;
 }
 #login-page .login-main .characters .green-char {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  bottom: 595px;
+  top: -67px;
   left: 380px;
-  transform: rotate(60deg);
+  transform: rotate(40deg);
 }
 #login-page .login-main .red-char {
   width: 220px;
   height: 220px;
   position: absolute;
-  bottom: 20px;
-  left: 1230px;
+  top: 420px;
+  left: 1200px;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 #login-page .login-main .blue-char {
   width: 175px;
   height: 175px;
   position: absolute;
-  bottom: 280px;
-  left: 140px;
+  top: 245px;
+  left: 145px;
 }
 #login-page .login-main .pink-char {
-  width: 175px;
-  height: 175px;
+  width: 170px;
+  height: 170px;
   position: absolute;
-  bottom: 20px;
-  left: 610px;
+  top: 450px;
+  left: 550px;
   z-index: 888;
   animation: rotate-small 2s ease-in-out infinite;
 }
@@ -218,7 +231,7 @@ a {
   0% {
     transform: rotate(0);
   }
-  15% {
+  25% {
     transform: translateX(30px);
   }
   50% {
@@ -226,15 +239,15 @@ a {
   }
 }
 #login-page .login-main .login-form {
-  flex: 1;
   background-color: #FEE3EC;
   padding: 36px;
   border-radius: 20px;
   box-shadow: 8px 8px 0 #534D97;
-  width: 400px;
+  width: 440px;
+  height: 530px;
   position: absolute;
-  bottom: 150px;
-  left: 800px;
+  top: 20px;
+  left: 700px;
   z-index: 777;
 }
 #login-page .login-main .login-form h2 {
@@ -264,6 +277,7 @@ a {
   color: #534D97;
   font-size: 0.9rem;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 #login-page .login-main .login-form form .login-button {
   background-color: #534D97;
@@ -273,7 +287,12 @@ a {
   border-radius: 10px;
   font-size: 1rem;
   font-weight: bold;
+  box-shadow: 3px 3px 0 rgb(233, 210, 243);
   cursor: pointer;
+}
+#login-page .login-main .login-form form .login-button:hover {
+  background-color: #b9b4f5;
+  color: #534D97;
 }
 #login-page .login-main .login-form .login-divider {
   display: flex;
@@ -299,4 +318,74 @@ a {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+#login-page .login-main .login-form .social-login button:hover {
+  scale: 1.05;
+}
+@media (min-width: 1441px) {
+  #login-page .login-main .amoeba-blobs {
+    width: 100%;
+    top: -600px;
+    left: 172px;
+    overflow: hidden;
+  }
+  #login-page .login-main .characters .green-char {
+    width: 280px;
+    height: 280px;
+    top: -150px;
+    left: 520px;
+    transform: rotate(20deg);
+  }
+  #login-page .login-main .red-char {
+    width: 300px;
+    height: 300px;
+    top: 500px;
+    left: 1440px;
+  }
+  #login-page .login-main .blue-char {
+    width: 240px;
+    height: 240px;
+    top: 300px;
+    left: 160px;
+  }
+  #login-page .login-main .pink-char {
+    width: 220px;
+    height: 220px;
+    top: 570px;
+    left: 680px;
+  }
+  #login-page .login-main .login-form {
+    width: 480px;
+    height: 560px;
+    top: 50px;
+    left: 920px;
+  }
+  #login-page .login-main .login-form .login-divider {
+    margin: 36px 0 24px;
+  }
+}
+#login-page .forget {
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login-page .forget .forgot-form {
+  background-color: #FFF0C0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  height: fit-content;
+}
+#login-page .forget .forgot-form h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  font-weight: 900;
+  color: #FFD640;
+  letter-spacing: 10px;
 }/*# sourceMappingURL=Login.css.map */

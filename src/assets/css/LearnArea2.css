@@ -167,10 +167,6 @@ a {
 /* reset end */
 #LearnAreaall2 {
   height: 100vh;
-  background-color: #FFD640;
-  background-image: url("../../../public/images/LearnArea-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #LearnAreaall2 .areaTitle {
   display: flex;
@@ -199,9 +195,11 @@ a {
 }
 #LearnAreaall2 .areaContent .diabox1 {
   padding: 20px;
+  position: relative;
+  align-self: self-start;
 }
 #LearnAreaall2 .areaContent .diabox1 .areap1 {
-  background-image: url("../../../public/images/LearnArea-dialogbox1.svg");
+  background-image: url("../images/LearnArea-dialogbox1.svg");
   background-repeat: no-repeat;
   line-height: 75px;
   width: fit-content;
@@ -211,9 +209,12 @@ a {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  position: absolute;
+  top: 150px;
+  left: 150px;
 }
 #LearnAreaall2 .areaContent .diabox1 .areatwo .areap2 {
-  background-image: url("../../../public/images/LearnArea-dialogbox3.svg");
+  background-image: url("../images/LearnArea-dialogbox3.svg");
   background-repeat: no-repeat;
   line-height: 45px;
   width: fit-content;
@@ -244,7 +245,7 @@ a {
   width: fit-content;
 }
 #LearnAreaall2 .areaContent .diabox2 .areathree .areap3 {
-  background-image: url("../../../public/images/LearnArea-dialogbox4.svg");
+  background-image: url("../images/LearnArea-dialogbox4.svg");
   background-repeat: no-repeat;
   line-height: 75px;
   width: fit-content;
@@ -256,7 +257,7 @@ a {
   width: fit-content;
 }
 #LearnAreaall2 .areaContent .diabox2 .areafour .areap4 {
-  background-image: url("../../../public/images/LearnArea-dialogbox2.svg");
+  background-image: url("../images/LearnArea-dialogbox2.svg");
   background-repeat: no-repeat;
   line-height: 40px;
   width: fit-content;

@@ -165,60 +165,62 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#LearnAreaall {
-  width: 100%;
-  overflow: hidden;
-  margin-top: -118px;
-}
-#LearnAreaall .la1 {
-  display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  position: relative;
-}
-#LearnAreaall .la1 .la1-1 {
-  display: flex;
-  flex-direction: column;
-}
-#LearnAreaall .la1 .la1-1 .la1-11 {
-  flex: 3;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 50px 0 0 125px;
-}
-#LearnAreaall .la1 .la1-1 .la1-11 .gee {
+.collectbox {
   position: absolute;
-  width: 25%;
-  left: 250px;
+  bottom: auto;
+  right: auto;
+  transition: position 0.3s ease, transform 0.3s ease;
 }
-#LearnAreaall .la1 .la1-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-}
-#LearnAreaall .la1 .la1-2 .la1-22 {
-  display: flex;
-}
-#LearnAreaall .la1 .la1-2 .la1-22 .rai1 {
-  position: absolute;
-  right: 300px;
-  bottom: 270px;
-  width: 32%;
-}
-#LearnAreaall .la1 .la1-2 .la1-22 .rai2 {
-  position: absolute;
+.collectbox.collectShow {
+  position: fixed;
+  bottom: 20px;
   right: 20px;
-  width: 38%;
+  transform: translateY(0);
+  z-index: 1002;
 }
-#LearnAreaall .la1 .la1-2 .rainbowtitle {
-  position: absolute;
-  bottom: 120px;
-  right: 570px;
-  font-size: 4rem;
-  font-weight: 900;
+.collectbox .collectimage {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
 }
-#LearnAreaall .la1 .la1-2 .rainbow {
-  width: 120%;
-}/*# sourceMappingURL=LearnArea1.css.map */
+.collectbox .collectimage svg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.collectbox .collectimage svg .collectlove.animate {
+  animation: collectmove 1s ease-in-out;
+}
+
+@keyframes collectmove {
+  0% {
+    transform: translateY(18px);
+  }
+  4% {
+    transform: translateY(-1.54%);
+  }
+  8% {
+    transform: translateY(-0.66%);
+  }
+  18% {
+    transform: translateY(-6.25%);
+  }
+  26% {
+    transform: translateY(-1.63%);
+  }
+  46% {
+    transform: translateY(-24.98%);
+  }
+  64% {
+    transform: translateY(-1.99%);
+  }
+  76% {
+    transform: translateY(-56.44%);
+  }
+  88% {
+    transform: translateY(-89.11%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}/*# sourceMappingURL=LearnAreaCollect.css.map */

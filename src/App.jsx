@@ -3,13 +3,13 @@ import LearnSelect from './pages/LearnSelect'
 import Trend from './pages/Trend';
 import Home from './pages/Home'
 import LearnHome from './pages/LearnHome';
-import './assets/scss/App.scss';
+import './assets/css/App.css';
 import Member from './pages/Member';
 import LearnPage from './pages/LearnPage';
 import LearnGame from './pages/LearnGame';
 import LearnGameChoose from './pages/LearnGameChoose';
 import Hamburger from './components/Hamburger';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import LearnArea from './pages/LearnArea';

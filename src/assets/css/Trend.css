@@ -203,18 +203,27 @@ a {
   height: 600px;
   transform: translate(30px, 120px);
   z-index: 1;
+  opacity: 0;
+  animation: fadeInLight 0.3s ease-Out forwards;
+  animation-delay: 0.5s;
 }
 #div1 .lightcontainer .container .light2 {
   transform: translate(0, 120px);
   position: absolute;
   height: 600px;
   z-index: 2;
+  opacity: 0;
+  animation: fadeInLight 0.1s ease-Out forwards;
+  animation-delay: 1s;
 }
 #div1 .lightcontainer .container .light3 {
   transform: translate(0, 120px);
   position: absolute;
   height: 600px;
   z-index: 3;
+  opacity: 0;
+  animation: fadeInLight 0.1s ease-Out forwards;
+  animation-delay: 1.5s;
 }
 #div1 .deco-1 {
   position: absolute;
@@ -267,8 +276,17 @@ a {
 
 #div2 {
   background-color: #FFD640;
-  background-image: url("../../../public/images/trendLine.png");
+  background-image: url("../images/trendLine.png");
   background-size: 99%;
   background-position: left top 140px;
   background-repeat: no-repeat;
+}
+
+@keyframes fadeInLight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=Trend.css.map */

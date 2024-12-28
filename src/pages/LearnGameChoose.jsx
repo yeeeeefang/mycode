@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../assets/scss/LearnGameChoose.scss'
+import '../assets/css/LearnGameChoose.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 
