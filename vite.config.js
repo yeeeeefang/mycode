@@ -4,7 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   // base:process.env.NODE_ENV==='production'?'/rcReact/':'/',
-/*   base:'./',
- */  plugins: [react()],
-  base:process.env.NODE_ENV ==='production'?'/RightCode/':'/', 
+  /*   base:'./',
+   */
+  base: '/newcode/',
+  plugins: [react()],
+  // base:process.env.NODE_ENV ==='production'?'/RightCode/':'/', 
 })
